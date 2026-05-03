@@ -158,10 +158,32 @@ chaos-create/
 │   │   └── feature-generator.ts     # Feature code generation
 │   └── utils/
 │       └── logger.ts                # Terminal output utilities
+├── docs/
+│   ├── README.md                    # Documentation index
+│   ├── ADVANCED_USAGE.md            # Advanced usage guide
+│   └── API.md                       # API documentation
 ├── package.json
 ├── tsconfig.json
 └── README.md
 ```
+
+## Documentation
+
+For comprehensive documentation, check out the [docs](./docs/) directory:
+
+- **[Getting Started](./README.md#installation)** - Installation and basic usage
+- **[Advanced Usage](./docs/ADVANCED_USAGE.md)** - Advanced features and configurations
+- **[API Documentation](./docs/API.md)** - Complete API reference
+- **[Contributing Guide](./CONTRIBUTING.md)** - How to contribute
+- **[Changelog](./CHANGELOG.md)** - Version history and changes
+
+### Quick Documentation Links
+
+- [Configuration Options](./docs/ADVANCED_USAGE.md#configuration)
+- [Custom Templates](./docs/ADVANCED_USAGE.md#custom-templates)
+- [Framework Registry](./src/framework-registry.ts)
+- [Feature Templates](./src/generators/feature-generator.ts)
+- [Troubleshooting](./docs/ADVANCED_USAGE.md#troubleshooting)
 
 ## Contributing
 
