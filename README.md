@@ -23,6 +23,12 @@ Create random apps with chaos and creativity! A CLI tool that generates random a
 - Svelte
 - SolidJS
 - Angular
+- SvelteKit
+- Astro
+- Remix
+- SolidStart
+- Vite React TypeScript
+- Next.js Starter
 
 ### Mobile
 
@@ -30,23 +36,32 @@ Create random apps with chaos and creativity! A CLI tool that generates random a
 - Expo
 - Expo Stack
 - Flutter
+- Ionic
+- Capacitor
 
 ### Desktop
 
 - Tauri
 - Electron
+- Neutralino
 
 ### CLI/Terminal
 
 - Ink (React CLI)
 - TUI Framework
 - Deno CLI
+- Clack
+- Cliffy
 
 ### Backend
 
 - Deno
 - Bun Backend
 - Node.js Express
+- Fastify
+- Koa
+- Hono
+- NestJS
 
 ## Installation
 
@@ -89,6 +104,7 @@ bun run src/index.ts create [options]
 Options:
   -c, --category <category>    App category (web, mobile, desktop, cli, backend)
   -f, --framework <framework>  Specific framework to use
+  -t, --template <url>         Git template URL to use instead of random framework
   --chaos                      Enable chaos mode (wild combinations)
   --no-libs                    Skip random library injection
   --no-features                Skip random feature generation
@@ -117,6 +133,27 @@ bun run src/index.ts chaos
 
 ```bash
 bun run src/index.ts list
+```
+
+### Git Templates
+
+Create projects from git templates:
+
+```bash
+# Create from a git template
+bun run src/index.ts create --template https://github.com/user/template
+
+# List templates from a repository
+bun run src/index.ts template --url https://github.com/user/repo --list
+
+# Validate a template
+bun run src/index.ts template --url https://github.com/user/repo --validate
+
+# List popular templates
+bun run src/index.ts template --popular
+
+# Clear template cache
+bun run src/index.ts template --clear-cache
 ```
 
 ## How It Works

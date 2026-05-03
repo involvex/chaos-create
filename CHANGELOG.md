@@ -8,9 +8,24 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
-- Initial release of chaos-create CLI tool
+- Git template integration with GitHub/GitLab support
+- Template validation and listing capabilities
+- Template caching for faster subsequent pulls
+- Support for custom branches and subdirectories in templates
+- 13 new frameworks across all categories
+- Template management CLI commands
+- Popular templates listing
+
+### Framework Support
+- **Web**: React (Vite), Next.js, Vue (Vite), Nuxt, Svelte, SolidJS, Angular, SvelteKit, Astro, Remix, SolidStart, Vite React TypeScript, Next.js Starter
+- **Mobile**: React Native, Expo, Expo Stack, Flutter, Ionic, Capacitor
+- **Desktop**: Tauri, Electron, Neutralino
+- **CLI**: Ink (React CLI), TUI Framework, Deno CLI, Clack, Cliffy
+- **Backend**: Deno, Bun Backend, Node.js Express, Fastify, Koa, Hono, NestJS
+
+### Features
 - Smart randomization engine with category awareness
-- Support for 17+ frameworks across 5 categories
+- Support for 30+ frameworks across 5 categories
 - Chaos mode for wild combinations
 - Random library injection system
 - Feature generation with working examples
@@ -19,15 +34,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Development server startup
 - Comprehensive framework registry
 - Multi-framework support (Web, Mobile, Desktop, CLI, Backend)
-
-### Framework Support
-- **Web**: React (Vite), Next.js, Vue (Vite), Nuxt, Svelte, SolidJS, Angular
-- **Mobile**: React Native, Expo, Expo Stack, Flutter
-- **Desktop**: Tauri, Electron
-- **CLI**: Ink (React CLI), TUI Framework, Deno CLI
-- **Backend**: Deno, Bun Backend, Node.js Express
-
-### Features
+- Git template pulling and management
+- Template validation and caching
+- Popular templates discovery
 - Weighted randomization based on popularity and stability
 - Category-aware framework selection
 - Compatible library injection
