@@ -1,0 +1,43 @@
+{
+  "author": "",
+  "bin": {
+    "chaos-create": "./src/index.ts"
+  },
+  "dependencies": {
+    "chalk": "^5.6.2",
+    "commander": "^14.0.3",
+    "inquirer": "^13.4.2",
+    "ora": "^9.4.0"
+  },
+  "description": "🎲 Create random apps with chaos and creativity!",
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/bun": "latest",
+    "@types/node": "^25.6.0",
+    "@typescript-eslint/eslint-plugin": "^8.59.1",
+    "@typescript-eslint/parser": "^8.59.1",
+    "eslint": "^10.3.0",
+    "prettier": "^3.8.3"
+  },
+  "keywords": ["cli", "generator", "scaffold", "random", "chaos", "framework", "template"],
+  "license": "MIT",
+  "module": "src/index.ts",
+  "name": "chaos-create",
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "scripts": {
+    "build": "bun run verify && bun build src/index.ts --outdir ./dist --target bun",
+    "dev": "bun --watch src/index.ts",
+    "start": "bun run src/index.ts",
+    "test": "bun test",
+    "lint": "eslint src --ext .ts",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "format:check": "prettier --check \"src/**/*.ts\"",
+    "typecheck": "tsc --noEmit",
+    "verify": "bun run lint && bun run format:check && bun run typecheck",
+    "prebuild": "bun run verify"
+  },
+  "type": "module",
+  "version": "1.0.0"
+}
