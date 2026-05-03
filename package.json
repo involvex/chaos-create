@@ -1,7 +1,10 @@
 {
-  "author": "",
+  "author": "involvex",
   "bin": {
     "chaos-create": "./src/index.ts"
+  },
+  "bugs": {
+    "url": "https://github.com/involvex/chaos-create/issues"
   },
   "dependencies": {
     "chalk": "^5.6.2",
@@ -9,7 +12,7 @@
     "inquirer": "^13.4.2",
     "ora": "^9.4.0"
   },
-  "description": "🎲 Create random apps with chaos and creativity!",
+  "description": "🎲 Create random apps with chaos and creativity! A CLI tool that generates random application scaffolds using various frameworks, libraries, and features.",
   "devDependencies": {
     "@eslint/js": "^10.0.1",
     "@types/bun": "latest",
@@ -19,24 +22,79 @@
     "eslint": "^10.3.0",
     "prettier": "^3.8.3"
   },
-  "keywords": ["cli", "generator", "scaffold", "random", "chaos", "framework", "template"],
+  "engines": {
+    "bun": ">=1.0.0",
+    "node": ">=18.0.0"
+  },
+  "exports": {
+    ".": {
+      "default": "./src/index.ts",
+      "types": "./src/index.ts"
+    }
+  },
+  "files": [
+    "src",
+    "package.json",
+    "README.md",
+    "LICENSE",
+    ".prettierrc",
+    "eslint.config.js"
+  ],
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/involvex"
+  },
+  "homepage": "https://github.com/involvex/chaos-create#readme",
+  "keywords": [
+    "cli",
+    "generator",
+    "scaffold",
+    "random",
+    "chaos",
+    "framework",
+    "template",
+    "react",
+    "vue",
+    "angular",
+    "svelte",
+    "nextjs",
+    "nuxt",
+    "flutter",
+    "react-native",
+    "expo",
+    "tauri",
+    "electron",
+    "deno",
+    "bun",
+    "create-app",
+    "boilerplate",
+    "starter",
+    "automation",
+    "developer-tools",
+    "productivity"
+  ],
   "license": "MIT",
   "module": "src/index.ts",
   "name": "chaos-create",
   "peerDependencies": {
     "typescript": "^5"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/involvex/chaos-create.git"
+  },
   "scripts": {
     "build": "bun run verify && bun build src/index.ts --outdir ./dist --target bun",
     "dev": "bun --watch src/index.ts",
-    "start": "bun run src/index.ts",
-    "test": "bun test",
-    "lint": "eslint src --ext .ts",
     "format": "prettier --write \"src/**/*.ts\"",
     "format:check": "prettier --check \"src/**/*.ts\"",
+    "lint": "eslint src --ext .ts",
+    "prebuild": "bun run verify",
+    "prepublishOnly": "bun run verify",
+    "start": "bun run src/index.ts",
+    "test": "bun test",
     "typecheck": "tsc --noEmit",
-    "verify": "bun run lint && bun run format:check && bun run typecheck",
-    "prebuild": "bun run verify"
+    "verify": "bun run lint && bun run format:check && bun run typecheck"
   },
   "type": "module",
   "version": "1.0.0"

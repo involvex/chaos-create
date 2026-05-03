@@ -15,6 +15,7 @@ Create random apps with chaos and creativity! A CLI tool that generates random a
 ## Supported Frameworks
 
 ### Web
+
 - React (Vite)
 - Next.js
 - Vue (Vite)
@@ -24,21 +25,25 @@ Create random apps with chaos and creativity! A CLI tool that generates random a
 - Angular
 
 ### Mobile
+
 - React Native
 - Expo
 - Expo Stack
 - Flutter
 
 ### Desktop
+
 - Tauri
 - Electron
 
 ### CLI/Terminal
+
 - Ink (React CLI)
 - TUI Framework
 - Deno CLI
 
 ### Backend
+
 - Deno
 - Bun Backend
 - Node.js Express
@@ -47,7 +52,7 @@ Create random apps with chaos and creativity! A CLI tool that generates random a
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/chaos-create.git
+git clone https://github.com/involvex/chaos-create.git
 cd chaos-create
 
 # Install dependencies
@@ -66,6 +71,7 @@ bun run src/index.ts create
 ```
 
 This will prompt you for:
+
 - Project name
 - Output directory
 - App category (or random)
@@ -131,6 +137,7 @@ bun run src/index.ts create --chaos
 ```
 
 In chaos mode, you might get:
+
 - React Native with Deno backend libraries
 - Flutter with React state management
 - CLI apps with mobile-specific features
@@ -167,13 +174,20 @@ Contributions are welcome! Areas for improvement:
 - Add tests
 - Improve error handling
 
+## Funding
+
+If you find this project useful, consider supporting its development:
+
+- **GitHub Sponsors**: [Sponsor involvex](https://github.com/sponsors/involvex)
+- **Star the repo**: ⭐ on GitHub to show your support
+
 ## License
 
-MIT
+MIT © [involvex](https://github.com/involvex)
 
 ## Author
 
-Created with 🎲 and chaos
+Created by [involvex](https://github.com/involvex) with 🎲 and chaos
 
 ---
 
