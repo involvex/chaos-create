@@ -1,4 +1,6 @@
 {
+    "name": "@involvex/chaos-create",
+    "version": "0.0.1",
   "author": "involvex",
   "bin": {
     "chaos-create": "./src/index.ts"
@@ -75,7 +77,6 @@
   ],
   "license": "MIT",
   "module": "src/index.ts",
-  "name": "chaos-create",
   "peerDependencies": {
     "typescript": "^5"
   },
@@ -96,6 +97,5 @@
     "typecheck": "tsc --noEmit",
     "verify": "bun run lint && bun run format:check && bun run typecheck"
   },
-  "type": "module",
-  "version": "1.0.0"
-}
+  "type": "module"
+  }
