@@ -288,7 +288,7 @@ export const FRAMEWORKS: Framework[] = [
     name: 'SvelteKit',
     category: 'web',
     cliCommand: 'bun',
-    cliArgs: ['create', 'sveltekit', '{projectName}'],
+    cliArgs: ['create', 'svelte@latest', '{projectName}'],
     packageManager: 'bun',
     popularity: 9,
     stability: 9,

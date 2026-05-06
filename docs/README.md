@@ -5,22 +5,26 @@ Welcome to the chaos-create documentation hub. This directory contains comprehen
 ## 📚 Documentation Index
 
 ### Getting Started
+
 - [README.md](../README.md) - Main project documentation and quick start guide
 - [Installation](../README.md#installation) - How to install and set up chaos-create
 - [Basic Usage](../README.md#usage) - Basic commands and examples
 
 ### Core Documentation
+
 - [Advanced Usage Guide](./ADVANCED_USAGE.md) - Advanced features and configurations
 - [API Documentation](./API.md) - Complete API reference and type definitions
 - [Contributing Guide](../CONTRIBUTING.md) - How to contribute to the project
 - [Changelog](../CHANGELOG.md) - Version history and changes
 
 ### Guides
+
 - [Framework Registry](../src/framework-registry.ts) - Available frameworks and their configurations
 - [Feature Templates](../src/generators/feature-generator.ts) - Available feature templates
 - [Configuration](./ADVANCED_USAGE.md#configuration) - Configuration options and environment variables
 
 ### Reference
+
 - [Type Definitions](./API.md#type-definitions) - TypeScript interfaces and types
 - [Error Handling](./API.md#error-handling) - Common errors and solutions
 - [Best Practices](./API.md#best-practices) - Recommended patterns and approaches
@@ -28,18 +32,21 @@ Welcome to the chaos-create documentation hub. This directory contains comprehen
 ## 🚀 Quick Links
 
 ### For Users
+
 - [Installation Guide](../README.md#installation)
 - [Basic Commands](../README.md#usage)
 - [Examples](../README.md#examples)
 - [Troubleshooting](./ADVANCED_USAGE.md#troubleshooting)
 
 ### For Developers
+
 - [Contributing Guide](../CONTRIBUTING.md)
 - [API Documentation](./API.md)
 - [Development Setup](../CONTRIBUTING.md#development-setup)
 - [Testing](../CONTRIBUTING.md#testing)
 
 ### For Contributors
+
 - [Adding Frameworks](../CONTRIBUTING.md#adding-new-frameworks)
 - [Creating Templates](./ADVANCED_USAGE.md#custom-templates)
 - [Code Style](../CONTRIBUTING.md#code-style)
@@ -68,12 +75,14 @@ docs/
 ## 🛠️ Development Documentation
 
 ### Project Structure
+
 - [Source Code](../src/) - Main source code directory
 - [Framework Registry](../src/framework-registry.ts) - Framework definitions
 - [Generators](../src/generators/) - Code generation modules
 - [Utilities](../src/utils/) - Helper utilities
 
 ### Key Modules
+
 - [Randomizer](../src/randomizer.ts) - Random selection engine
 - [Framework Generator](../src/generators/framework-generator.ts) - Project generation
 - [Library Injector](../src/generators/library-injector.ts) - Library management
@@ -94,6 +103,7 @@ When contributing documentation:
 ### Code Examples
 
 All code examples should:
+
 - Be complete and runnable
 - Include necessary imports
 - Have clear comments
@@ -102,7 +112,8 @@ All code examples should:
 ### Documentation Templates
 
 #### New Feature Documentation
-```markdown
+
+````markdown
 ## Feature Name
 
 Brief description of the feature.
@@ -112,6 +123,7 @@ Brief description of the feature.
 ```bash
 command example
 ```
+````
 
 ### Options
 
@@ -128,6 +140,7 @@ command example
 
 - [Related Feature](link)
 - [API Reference](link)
+
 ```
 
 ## 🤝 Contributing to Documentation
@@ -198,8 +211,9 @@ Stay informed about documentation changes:
 
 ---
 
-**Last Updated**: 2025-01-03  
-**Documentation Version**: 1.0.0  
+**Last Updated**: 2025-01-03
+**Documentation Version**: 1.0.0
 **Maintained by**: [@involvex](https://github.com/involvex)
 
 For questions or suggestions about documentation, please [open an issue](https://github.com/involvex/chaos-create/issues).
+```

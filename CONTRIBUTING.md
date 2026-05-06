@@ -12,7 +12,7 @@ Before creating bug reports, please check the existing issues as you might find 
 - **Steps to Reproduce**: Steps to reproduce the behavior
 - **Expected Behavior**: What you expected to happen
 - **Screenshots**: If applicable, add screenshots
-- **Environment**: 
+- **Environment**:
   - OS: [e.g., Windows, macOS, Linux]
   - Node.js version: `node --version`
   - Bun version: `bun --version`
@@ -38,12 +38,14 @@ Enhancement suggestions are welcome! Please include:
 ### Installation
 
 1. **Fork and clone the repository**:
+
    ```bash
    git clone https://github.com/YOUR_USERNAME/chaos-create.git
    cd chaos-create
    ```
 
 2. **Install dependencies**:
+
    ```bash
    bun install
    ```
@@ -93,6 +95,7 @@ bun test --watch
 Tests are written using Bun's built-in test runner. Create test files alongside your source files with the `.test.ts` extension.
 
 Example test:
+
 ```typescript
 import { describe, it, expect } from 'bun:test';
 import { myFunction } from './my-module';
@@ -149,6 +152,7 @@ bun run build
 To add a new framework to the registry:
 
 1. **Edit `src/framework-registry.ts`**:
+
    ```typescript
    {
      id: 'my-framework',
@@ -166,6 +170,7 @@ To add a new framework to the registry:
    ```
 
 2. **Add feature templates** in `src/generators/feature-generator.ts`:
+
    ```typescript
    'My Feature': {
      web: `// Your web feature code`,
@@ -192,18 +197,22 @@ To add a new framework to the registry:
 
 ```markdown
 ## Description
+
 Brief description of the changes
 
 ## Type of Change
+
 - [ ] Bug fix
 - [ ] New feature
 - [ ] Breaking change
 - [ ] Documentation update
 
 ## Testing
+
 Describe how you tested your changes
 
 ## Checklist
+
 - [ ] My code follows the style guidelines
 - [ ] I have performed a self-review
 - [ ] I have commented my code where necessary

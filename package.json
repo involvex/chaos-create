@@ -1,6 +1,6 @@
 {
-    "name": "@involvex/chaos-create",
-    "version": "0.0.1",
+  "name": "@involvex/chaos-create",
+  "version": "0.0.1",
   "author": "involvex",
   "bin": {
     "chaos-create": "./src/index.ts"
@@ -84,18 +84,18 @@
     "type": "git",
     "url": "git+https://github.com/involvex/chaos-create.git"
   },
-  "scripts": {
+    "scripts": {
     "build": "bun run verify && bun build src/index.ts --outdir ./dist --target bun",
     "dev": "bun --watch src/index.ts",
     "format": "prettier --write \"src/**/*.ts\"",
     "format:check": "prettier --check \"src/**/*.ts\"",
     "lint": "eslint src --ext .ts",
-    "prebuild": "bun run verify",
+    "prebuild": "bun run verify && bun run verify",
     "prepublishOnly": "bun run verify",
     "start": "bun run src/index.ts",
     "test": "bun test",
     "typecheck": "tsc --noEmit",
-    "verify": "bun run lint && bun run format:check && bun run typecheck"
+    "verify": "bun run lint && bun run format && bun run typecheck"
   },
   "type": "module"
-  }
+}

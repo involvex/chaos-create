@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+
 - Git template integration with GitHub/GitLab support
 - Template validation and listing capabilities
 - Template caching for faster subsequent pulls
@@ -17,6 +18,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Popular templates listing
 
 ### Framework Support
+
 - **Web**: React (Vite), Next.js, Vue (Vite), Nuxt, Svelte, SolidJS, Angular, SvelteKit, Astro, Remix, SolidStart, Vite React TypeScript, Next.js Starter
 - **Mobile**: React Native, Expo, Expo Stack, Flutter, Ionic, Capacitor
 - **Desktop**: Tauri, Electron, Neutralino
@@ -24,6 +26,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **Backend**: Deno, Bun Backend, Node.js Express, Fastify, Koa, Hono, NestJS
 
 ### Features
+
 - Smart randomization engine with category awareness
 - Support for 30+ frameworks across 5 categories
 - Chaos mode for wild combinations
@@ -46,6 +49,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Configuration file support (planned)
 
 ### Developer Experience
+
 - TypeScript support
 - ESLint configuration
 - Prettier formatting
@@ -54,6 +58,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - CI/CD ready
 
 ### Documentation
+
 - Comprehensive README
 - Contributing guidelines
 - API documentation
@@ -62,6 +67,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [1.0.0] - 2025-01-03
 
 ### Added
+
 - Initial public release
 - Core CLI functionality
 - Framework registry system
@@ -72,10 +78,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Documentation
 
 ### Security
+
 - Secure dependency management
 - No known vulnerabilities
 
 ### Performance
+
 - Fast project generation
 - Efficient randomization algorithms
 - Optimized dependency installation

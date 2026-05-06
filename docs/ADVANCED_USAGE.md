@@ -58,11 +58,13 @@ Create a `.chaosrc.json` file in your project root:
 ### Creating Custom Templates
 
 1. **Create a templates directory**:
+
    ```bash
    mkdir -p ~/.chaos-templates
    ```
 
 2. **Add your template**:
+
    ```bash
    ~/.chaos-templates/
    ├── my-react-template/
@@ -148,16 +150,8 @@ Define custom library sets in your config:
 ```json
 {
   "librarySets": {
-    "frontend-essentials": [
-      "react-router-dom",
-      "axios",
-      "zustand"
-    ],
-    "testing": [
-      "vitest",
-      "@testing-library/react",
-      "msw"
-    ]
+    "frontend-essentials": ["react-router-dom", "axios", "zustand"],
+    "testing": ["vitest", "@testing-library/react", "msw"]
   }
 }
 ```
@@ -196,7 +190,7 @@ import { useState } from 'react';
 
 export function MyCustomFeature() {
   const [state, setState] = useState(null);
-  
+
   return (
     <div>
       <h1>My Custom Feature</h1>
@@ -228,7 +222,7 @@ Organize features by category:
 const featureCategories = {
   authentication: ['User authentication', 'OAuth', 'JWT'],
   data: ['REST API', 'GraphQL', 'WebSockets'],
-  ui: ['Dark mode', 'Responsive design', 'Animations']
+  ui: ['Dark mode', 'Responsive design', 'Animations'],
 };
 ```
 
@@ -301,15 +295,11 @@ const selection = randomizer.generate({
   chaosMode: true,
   includeLibraries: true,
   includeFeatures: true,
-  libraryCount: 3
+  libraryCount: 3,
 });
 
 const generator = new FrameworkGenerator();
-await generator.generate(
-  selection.framework,
-  'my-app',
-  './output'
-);
+await generator.generate(selection.framework, 'my-app', './output');
 ```
 
 ## Troubleshooting
@@ -321,6 +311,7 @@ await generator.generate(
 **Problem**: `command not found: framework-cli`
 
 **Solution**:
+
 ```bash
 # Install the framework CLI globally
 bun install -g framework-cli
@@ -334,6 +325,7 @@ npx framework-cli create my-app
 **Problem**: `Permission denied` when creating files
 
 **Solution**:
+
 ```bash
 # Check directory permissions
 ls -la
@@ -347,6 +339,7 @@ chmod 755 /path/to/directory
 **Problem**: `npm install` fails
 
 **Solution**:
+
 ```bash
 # Clear cache
 bun pm cache rm
@@ -376,11 +369,13 @@ bun run src/index.ts create --verbose
 ### Speed Up Generation
 
 1. **Use local templates**:
+
    ```bash
    chaos-create create --template ./local-template
    ```
 
 2. **Skip dependency installation**:
+
    ```bash
    chaos-create create --no-install
    ```
@@ -419,6 +414,7 @@ projects/
 ### Naming Conventions
 
 Use consistent naming:
+
 ```bash
 # Good
 chaos-create create --project-name my-awesome-app
@@ -430,6 +426,7 @@ chaos-create create --project-name MyAwesomeApp
 ### Version Control
 
 Initialize git for generated projects:
+
 ```bash
 cd generated-project
 git init
@@ -481,6 +478,7 @@ bun run src/index.ts create \
 ## Support
 
 For issues and questions:
+
 - [GitHub Issues](https://github.com/involvex/chaos-create/issues)
 - [GitHub Discussions](https://github.com/involvex/chaos-create/discussions)
 - [Email Support](mailto:support@example.com)

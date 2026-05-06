@@ -45,6 +45,7 @@ program
 ```
 
 **Options**:
+
 - `category`: App category (`web`, `mobile`, `desktop`, `cli`, `backend`)
 - `framework`: Specific framework ID
 - `chaos`: Enable chaos mode (boolean)
@@ -113,6 +114,7 @@ const framework = getFrameworkById('react-vite');
 ```
 
 **Parameters**:
+
 - `id`: Framework identifier
 
 **Returns**: Framework object or undefined
@@ -127,6 +129,7 @@ const webFrameworks = getFrameworksByCategory('web');
 ```
 
 **Parameters**:
+
 - `category`: Framework category
 
 **Returns**: Array of frameworks
@@ -177,6 +180,7 @@ const randomizer = new Randomizer(chaosMode: boolean);
 ```
 
 **Parameters**:
+
 - `chaosMode`: Enable chaos mode (default: false)
 
 #### `selectFramework(category?, frameworkId?)`
@@ -189,6 +193,7 @@ const framework = randomizer.selectFramework('web', 'react-vite');
 ```
 
 **Parameters**:
+
 - `category`: Optional category filter
 - `frameworkId`: Optional specific framework ID
 
@@ -206,6 +211,7 @@ const libraries = randomizer.selectLibraries(framework, 3);
 ```
 
 **Parameters**:
+
 - `framework`: Framework object
 - `count`: Number of libraries to select (default: 3)
 
@@ -221,6 +227,7 @@ const features = randomizer.selectFeatures('web', 2);
 ```
 
 **Parameters**:
+
 - `category`: Framework category
 - `count`: Number of features to select (default: 2)
 
@@ -236,6 +243,7 @@ const template = randomizer.selectTemplate(framework);
 ```
 
 **Parameters**:
+
 - `framework`: Framework object
 
 **Returns**: Template name or undefined
@@ -249,12 +257,13 @@ const selection = randomizer.generate({
   chaosMode: false,
   includeLibraries: true,
   includeFeatures: true,
-  libraryCount: 3
+  libraryCount: 3,
 });
 // Returns: RandomSelection
 ```
 
 **Parameters**:
+
 - `options`: RandomizationOptions object
 
 **Returns**: Complete RandomSelection object
@@ -269,15 +278,12 @@ Generates a new project using a framework.
 
 ```typescript
 const generator = new FrameworkGenerator();
-const projectPath = await generator.generate(
-  framework,
-  'my-app',
-  './output'
-);
+const projectPath = await generator.generate(framework, 'my-app', './output');
 // Returns: Promise<string>
 ```
 
 **Parameters**:
+
 - `framework`: Framework object
 - `projectName`: Name for the project
 - `outputDir`: Output directory path
@@ -296,6 +302,7 @@ await generator.installDependencies(framework, projectPath);
 ```
 
 **Parameters**:
+
 - `framework`: Framework object
 - `projectPath`: Path to the project
 
@@ -311,6 +318,7 @@ await generator.startDevServer(framework, projectPath);
 ```
 
 **Parameters**:
+
 - `framework`: Framework object
 - `projectPath`: Path to the project
 
@@ -329,6 +337,7 @@ await injector.injectLibraries(framework, projectPath, ['lib1', 'lib2']);
 ```
 
 **Parameters**:
+
 - `framework`: Framework object
 - `projectPath`: Path to the project
 - `libraries`: Array of library names
@@ -350,6 +359,7 @@ await featureGenerator.generateFeatures(framework, projectPath, ['auth', 'api'])
 ```
 
 **Parameters**:
+
 - `framework`: Framework object
 - `projectPath`: Path to the project
 - `features`: Array of feature names
@@ -542,15 +552,11 @@ const selection = randomizer.generate({
   chaosMode: false,
   includeLibraries: true,
   includeFeatures: true,
-  libraryCount: 3
+  libraryCount: 3,
 });
 
 const generator = new FrameworkGenerator();
-const projectPath = await generator.generate(
-  selection.framework,
-  'my-app',
-  './output'
-);
+const projectPath = await generator.generate(selection.framework, 'my-app', './output');
 
 console.log('Project created at:', projectPath);
 ```
@@ -566,22 +572,14 @@ const selection = randomizer.generate({
   chaosMode: true,
   includeLibraries: true,
   includeFeatures: true,
-  libraryCount: 5
+  libraryCount: 5,
 });
 
 const generator = new FrameworkGenerator();
-const projectPath = await generator.generate(
-  selection.framework,
-  'my-chaos-app',
-  './output'
-);
+const projectPath = await generator.generate(selection.framework, 'my-chaos-app', './output');
 
 const injector = new LibraryInjector();
-await injector.injectLibraries(
-  selection.framework,
-  projectPath,
-  selection.libraries
-);
+await injector.injectLibraries(selection.framework, projectPath, selection.libraries);
 
 console.log('Chaos app created!');
 ```
@@ -597,6 +595,7 @@ console.log('Chaos app created!');
 ## Support
 
 For API-related questions:
+
 - [GitHub Issues](https://github.com/involvex/chaos-create/issues)
 - [API Documentation](https://github.com/involvex/chaos-create/blob/main/docs/API.md)
 - [Examples](https://github.com/involvex/chaos-create/tree/main/examples)
